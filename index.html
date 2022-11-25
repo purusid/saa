@@ -27,36 +27,35 @@
     </div>
     <div class="flex-container" style="background-color: #111;">
         <div style="text-align: center">
-            <h2 style="background-color: #0000;text-align: left;color: #eee;font-weight: bold;padding: 2vmin;">
+            <h2 style="background-color: #0000;text-align: left;color: #eee;font-weight: bolder;padding: 2vmin;">
                 Interior Design Solutions
             </h2>
             <div class="types-disp-grid">
                 <div>
-                    <div class="types-disp-grid-item"></div>
+                    <img class="types-disp-grid-item" src="ico/chimney.png">
                     <div class="types-disp-grid-item-desc">Modular Kitchen</div>
                 </div>
                 <div>
-                    <div class="types-disp-grid-item"></div>
+                    <img class="types-disp-grid-item" src="ico/bathtub.png">
                     <div class="types-disp-grid-item-desc">Bathroom Solutions</div>
                 </div>
                 <div>
-                    <div class="types-disp-grid-item"></div>
+                    <img class="types-disp-grid-item" src="ico/bed.png">
                     <div class="types-disp-grid-item-desc">Bedroom Solutions</div>
                 </div>
 
                 <div>
-                    <div class="types-disp-grid-item"></div>
+                    <img class="types-disp-grid-item" src="ico/shelf.png">
                     <div class="types-disp-grid-item-desc">Modern Furniture</div>
                 </div>
-                <div>
-                    <div class="types-disp-grid-item"></div>
-                    <div class="types-disp-grid-item-desc">Et Cetera</div>
-                </div>
-                <div>
-                    <div class="types-disp-grid-item"></div>
-                    <div class="types-disp-grid-item-desc">Et Cetera</div>
-                </div>
             </div>
+            <br>
+            <a href="gallery">
+                <div
+                    style="background-color: #0008;font-size: 3vmin;color: #eee;font-weight: bolder;">
+                    See Full Gallery >>>
+                </div>
+            </a>
         </div>
         <br>
     </div>
@@ -83,59 +82,35 @@
             <br>
         </div>
     </div>
-    <div class="flex-container"
-        style="background-color: #333;">
-        <div>
-            <br>
-            <h1 style="background-color: #0008;width: 100%;text-align: center;color: #eee;padding: 1vmin;">Top Designs
-            </h1>
-            <br>
-            <div class="gallery-grid">
-                <a href="">
-                    <div class="gallery-grid-item"></div>
-                    <div class="gallery-grid-item-desc"></div>
-                </a>
-            </div>
-            <br>
-            <a href="gallery">
-                <div
-                    style="background-color: #0008;font-size: 3vmin;color: #eee;font-weight: 100;text-decoration: underline;">
-                    See Full Gallery >>>
-                </div>
-            </a>
-            <br>
-        </div>
-    </div>
     <div class="flex-container" style="background-image: url('bg/adwaita-d.jpg');background-size: cover;">
         <div class="flex-container-half">
             <div style="text-align: center;">
-                <div class="subheading" style="padding: 1vmin;max-width: 40vw;">Get Your Dream Home Designed Today!!!
+                <div class="subheading" style="padding: 1vmin;max-width: 40vw;">
+                    Get Your Dream Home Designed Today!!!
                 </div>
                 <div class="subheading" style="padding: .5vmin;font-size: 2vmin;max-width: 40vw;">
-                    <a href="mailto:saainteriorsdesigner@gmail.com"
-                        style="text-decoration: underline;color: #eee;">[Email]</a>
-                    us your requirements or enter your
-                    details on the right so that our designers can get back to you.
+                    <a href="mailto:saainteriorsdesigner@gmail.com" style="text-decoration: underline;color: #eee;">
+                        [Email]
+                    </a>
+                    us your requirements or send us your details so that our designers can get back to you.
                 </div>
             </div>
         </div>
         <div class="flex-container-half">
             <div class="enquire-box-container" id="enquire">
-                <div style="width: 100%; font-weight: 1000;">
-                    Enter your contact details so that we can contact you later:
-                </div>
-                <br>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Phone [Optional]">
-                <input type="text" placeholder="Address [Optional]">
-                <button style="cursor: pointer;">Submit</button>
+                <input type="text" placeholder="Name" id="enq-name">
+                <input type="email" placeholder="Email" id="enq-name">
+                <input type="text" placeholder="Phone [Optional]" id="enq-phone">
+                <button style="cursor: pointer;"
+                    onclick="window.location=`mailto:saainteriorsdesigner@gmail.com?subject=Enquiry From ${document.getElementById('enq-name').value}&body=Name:%20${document.getElementById('enq-name').value}%0APhone:%20${document.getElementById('enq-phone').value}%0AEnquiry:%20${document.getElementById('enq-enq').value}`">
+                    Send
+                </button>
             </div>
         </div>
     </div>
-    <div class="flex-container" style="background-color: #333;">
+    <div class="flex-container" style="background-color: #000;">
         <div>
-            <h1 style="text-align: center;color: #fff;">Follow Us Wherever You Go</h1>
+            <h1 style="text-align: center;color: #fff;">Contact Us</h1>
             <br>
             <div class="contacts-grid">
                 <div>
@@ -144,7 +119,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#">
+                    <a href="mailto:saainteriorsdesigner@gmail.com">
                         <img class="contact-btn" src="ico/gm.png">
                     </a>
                 </div>
@@ -154,7 +129,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#">
+                    <a href="https://instagram.com/saainteriors/">
                         <img class="contact-btn" src="ico/ig.png">
                     </a>
                 </div>
@@ -164,7 +139,8 @@
     </div>
 
     <div style="background-color: #000e;width: 100%;font-size: 2vmin;color: #eee;font-weight: 100;">
-        Note: The SAA Logo, Interior Design Images, and This Website are all registered trademarks of SAA Interiors Co.
+        Note: The SAA Logo, Interior Design Images, and This Website are all registered trademarks of SAA Interiors
+        Co.
     </div>
     <div style="background-color: #000e;width: 100%;font-size: 2vmin;color: #eee;font-weight: 100;">
         &copy; SAA Interiors Co. [2022-23]

@@ -69,169 +69,6 @@ body {
     --final-scale: 0.65;
 }
 
-.loader-flex-container {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    display: flex;
-    background-color: #111;
-    align-items: center;
-    justify-content: center;
-}
-
-#loader {
-    transition: all 1s linear;
-}
-
-.loader {
-    display: grid;
-    grid-template-columns: 20vmin 20vmin 20vmin;
-    animation-name: spin;
-    animation-timing-function: cubic-bezier(.45, .05, .55, .95);
-    animation-duration: calc(var(--loader-cycle-duration) * 4);
-    animation-iteration-count: infinite;
-}
-
-.loader-arrow {
-    font-size: 15vmin;
-    color: #fff;
-    height: 20vmin;
-    width: 20vmin;
-}
-
-.lt-arrow {
-    animation-timing-function: linear;
-    animation-duration: var(--loader-cycle-duration);
-    animation-name: bulge-lt-arrow;
-    animation-iteration-count: infinite;
-}
-
-.up-arrow {
-    animation-timing-function: linear;
-    animation-duration: var(--loader-cycle-duration);
-    animation-name: bulge-up-arrow;
-    animation-iteration-count: infinite;
-}
-
-.rt-arrow {
-    animation-timing-function: linear;
-    animation-duration: var(--loader-cycle-duration);
-    animation-name: bulge-rt-arrow;
-    animation-iteration-count: infinite;
-}
-
-.dw-arrow {
-    animation-timing-function: linear;
-    animation-duration: var(--loader-cycle-duration);
-    animation-name: bulge-dw-arrow;
-    animation-iteration-count: infinite;
-}
-
-@keyframes bulge-lt-arrow {
-    0% {
-        transform: scale(var(--init-scale));
-    }
-
-    20% {
-        transform: scale(var(--final-scale));
-    }
-
-    40% {
-        transform: scale(var(--init-scale));
-    }
-
-    60% {
-        transform: scale(var(--init-scale));
-    }
-
-    80% {
-        transform: scale(var(--init-scale));
-    }
-
-    100% {
-        transform: scale(var(--init-scale));
-    }
-}
-
-@keyframes bulge-up-arrow {
-    0% {
-        transform: scale(var(--init-scale));
-    }
-
-    20% {
-        transform: scale(var(--init-scale));
-    }
-
-    40% {
-        transform: scale(var(--final-scale));
-    }
-
-    60% {
-        transform: scale(var(--init-scale));
-    }
-
-    80% {
-        transform: scale(var(--init-scale));
-    }
-
-    100% {
-        transform: scale(var(--init-scale));
-    }
-}
-
-@keyframes bulge-rt-arrow {
-    0% {
-        transform: scale(var(--init-scale));
-    }
-
-    20% {
-        transform: scale(var(--init-scale));
-    }
-
-    40% {
-        transform: scale(var(--init-scale));
-    }
-
-    60% {
-        transform: scale(var(--final-scale));
-    }
-
-    80% {
-        transform: scale(var(--init-scale));
-    }
-
-    100% {
-        transform: scale(var(--init-scale));
-    }
-}
-
-@keyframes bulge-dw-arrow {
-    0% {
-        transform: scale(var(--init-scale));
-    }
-
-    20% {
-        transform: scale(var(--init-scale));
-    }
-
-    40% {
-        transform: scale(var(--init-scale));
-    }
-
-    60% {
-        transform: scale(var(--init-scale));
-    }
-
-    80% {
-        transform: scale(var(--final-scale));
-    }
-
-    100% {
-        transform: scale(var(--init-scale));
-    }
-}
-
 h1 {
     color: #eee;
     margin-right: 2vmin;
@@ -241,16 +78,6 @@ h1 {
     width: 100%;
     font-size: 4vmin;
     text-align: left
-}
-
-@keyframes spin {
-    0% {
-        transform: rotateZ(0deg);
-    }
-
-    50% {
-        transform: rotateZ(180deg)
-    }
 }
 
 .flex-container {
@@ -317,8 +144,7 @@ a {
     background-color: #eee;
     border-radius: 1vmin 1vmin 0 0;
     box-shadow: .5vmin .5vmin #0008;
-    background-image: url('ico/chimney.png');
-    background-size: contain;
+    padding: 1vmin;
 }
 
 .types-disp-grid-item-desc {
@@ -379,6 +205,17 @@ a {
 .enquire-box-container>button {
     width: 100%;
     height: 5vmin;
+    margin-bottom: 2vmin;
+    border: none;
+    background-color: #fff;
+    border-radius: 1vmin;
+    line-height: 4vmin;
+    padding: .5vmin;
+}
+
+.enquire-box-container>textarea {
+    width: 100%;
+    height: 15vmin;
     margin-bottom: 2vmin;
     border: none;
     background-color: #fff;
